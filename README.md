@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### Get STARTED
+
+
+To get started first you have to install json-server globally
+
+"npm install -g json-server"
+
+Inside project folder where catalog.json exists run command(By using JSON server we are faking the API call).
+
+"json-server --p 5555 catalog.json"
+
+"npm i"
+
+We are now good to run the project by "npm start"
