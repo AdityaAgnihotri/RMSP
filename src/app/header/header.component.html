@@ -1,0 +1,189 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light colorNavbar" style="background-color:#060605">
+  <div class="container-fluid">
+    <div class="col-8auto px-0" id="navbarTogglerDemo01">
+      <div class="navbar-brand" style="color:#fff">RENTAL MANAGEMENT SYSTEM</div>      
+
+
+    </div>
+    <div class="navbar-toggler ">
+      <button class="btn btn-outline-light text-white" type="button" data-toggle="collapse" data-target="#navbar-collapse"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        menu
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <div class="d-flex justify-content-end">
+        <ul class="navbar-nav headerdropdown">
+          <li class="nav-item dropdown">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" data-toggle="dropdown" role="button">
+                Select Location
+              </a>
+              <ul class="dropdown-menu  dropdown-menu-right list-unstyled">
+                <li class="dropleft" *ngFor="let item of incomingArray">
+                  <a class="dropdown-item dropdown-toggle">{{item.name}}</a>
+                  <ul class="dropdown-menu">
+                    <div *ngIf="item && item.branches.length > 0">
+                      <li *ngFor="let subItem of item.branches">
+                        <a class="dropdown-item" (click)="selectedItem(item, subItem)">{{subItem.name}}</a>
+                      </li>
+                    </div> -->
+
+                    <!-- <li class="dropright">
+                <a class="dropdown-item dropdown-toggle" href="#">level 3</a>
+                <ul class="dropdown-menu">
+                  <li *ngFor = "let subItem of item.branches">
+                    <a class="dropdown-item" href="#">{{subItem.name}}</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">level 3</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">level 3</a></li>
+                </ul>
+              </li> -->
+                    <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
+                    <!-- <li class="dropright">
+                <a class="dropdown-item dropdown-toggle" href="#">level 3</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">action</a></li>
+                </ul>
+              </li> -->
+                  <!-- </ul>
+                </li> -->
+                <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
+                <!-- <li class="dropright">
+            <a class="dropdown-item dropdown-toggle" href="#">level 2</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li class="dropright">
+                <a class="dropdown-item dropdown-toggle" href="#">level 3</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">action</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li class="dropright">
+                <a class="dropdown-item dropdown-toggle" href="#">level 3</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">action</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li> -->
+              <!-- </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav> -->
+
+
+
+
+
+
+<!-- <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" data-toggle="dropdown" role="button">
+    level 1
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li class="dropright">
+      <a class="dropdown-item dropdown-toggle" href="#">level 2</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li class="dropright">
+          <a class="dropdown-item dropdown-toggle" href="#">level 3</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">level 3</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">level 3</a></li>
+          </ul>
+        </li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li class="dropright">
+          <a class="dropdown-item dropdown-toggle" href="#">level 3</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">action</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li class="dropright">
+      <a class="dropdown-item dropdown-toggle" href="#">level 2</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li class="dropright">
+          <a class="dropdown-item dropdown-toggle" href="#">level 3</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">action</a></li>
+          </ul>
+        </li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li class="dropright">
+          <a class="dropdown-item dropdown-toggle" href="#">level 3</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">action</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div> -->
+
+<nav class="main-navbar py-3 " style="background-color:#060605">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col">
+        <h2 class="m-0 brand-name text-white d-none d-md-block">RENTAL MANAGEMENT SYSTEM</h2>
+        <h2 class="m-0  brand-name text-white d-md-none">R.M.S.</h2>
+      </div>
+      <div class="col-auto">
+        <ul class="list-unstyled m-0 headerdropdown">
+          <li class="nav-item dropdown">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" data-toggle="dropdown" role="button">
+                Select Location
+              </a>
+              <ul class="dropdown-menu  dropdown-menu-right">
+                <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+                <li class="dropleft" *ngFor="let item of incomingArray">
+                  <a class="dropdown-item dropdown-toggle">{{item.name}}</a>
+                  <ul class="dropdown-menu">
+                    <div *ngIf="item && item.branches.length > 0">
+                      <li *ngFor="let subItem of item.branches">
+                        <a class="dropdown-item" (click)="selectedItem(item, subItem)">{{subItem.name}}</a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

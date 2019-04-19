@@ -1,0 +1,16 @@
+<div class="container">
+  <div style="padding-top: 20px; font-weight: bold;">Equipment Catelog</div>
+  <div class="row">
+    <div class="col-12 col-lg-3 col-md-6 col-sm-12 pt-5" *ngFor="let item of filteredArray">
+      <div class="cardDisplay">
+        <div>
+          <img alt="Avatar" height="200" [src]="item.image" onerror="this.src='assets/img/subcategory/dummy.png'" width="200">
+          <div class="w-100 p-3 cardStrap">
+            {{item.name}} <span (click)="navigateToSubCategory(item.name)" class="glyphicon glyphicon-arrow-right icon"></span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

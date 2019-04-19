@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "https://s3.ap-south-1.amazonaws.com/json-file/catalog.json",
+    "secure": true,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

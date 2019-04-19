@@ -1,0 +1,16 @@
+
+.btn-secondary {
+    color: #fff;
+    background-color: #060605;
+    border-color:#060605;
+}
+.navbar {
+    position: relative;    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0rem 0rem;
+}
+.colorNavbar{
+    color:#060605;
+}
